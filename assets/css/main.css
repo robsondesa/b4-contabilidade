@@ -602,6 +602,9 @@ h6 {
 
 .footer .footer-contact p {
   margin-bottom: 10px;
+  font-size: 1rem; /* Ajuste conforme necessário */
+  line-height: 1.5; /* Ajuste conforme necessário */
+  word-wrap: break-word; /* Para garantir que longos textos sejam quebrados */
 }
 
 .footer .copyright {
