@@ -150,7 +150,7 @@ h6 {
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 15px 0;
+  padding: 5px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -194,6 +194,9 @@ h6 {
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
+  }
+  .header {
+    padding: 15px 0;
   }
 
   .header .header-social-links {
