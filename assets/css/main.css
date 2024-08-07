@@ -1905,15 +1905,19 @@ canvas {
   right: 30px;
   border-radius: 50%;
   height: 50px;
-  width: 48px;
+  width: 50px; /* Ajustar a largura para ser igual à altura */
   cursor: pointer;
   background: #25D366;
   color: #FFF;
   font-size: 1.8rem;
-z-index: 99999;
-border: transparent;
+  line-height: 50px; /* Ajustar o line-height para centralizar o ícone */
+  text-align: center; /* Centralizar o ícone horizontalmente */
+  z-index: 99999;
+  border: transparent;
+  display: flex; /* Adicionar flexbox para alinhamento */
+  justify-content: center; /* Centralizar horizontalmente */
+  align-items: center; /* Centralizar verticalmente */
 }
-
 
 .btn-whatsapp::after,
 .btn-whatsapp::before {
@@ -1925,26 +1929,27 @@ border: transparent;
   top: -10px;
   right: -10px;
   bottom: -10px;
-  -webkit-border-radius: 50px;
-  animation: WaveGratis 1.8s ease infinite
+  border-radius: 50px;
+  animation: WaveGratis 1.8s ease infinite;
 }
 
 .btn-whatsapp::after {
-  animation-delay: .5s
+  animation-delay: .5s;
 }
 
 @keyframes WaveGratis {
   0% {
-      transform: scale(.5)
+    transform: scale(0.5);
   }
   50% {
-      opacity: 1
+    opacity: 1;
   }
   100% {
-      transform: scale(1.2);
-      opacity: 0
+    transform: scale(1.2);
+    opacity: 0;
   }
 }
+
 
 
 .statistics {
