@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>B4 Contabilidade</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/hero-logo.png" rel="icon">
+  <link href="assets/img/hero-logo.png" rel="apple-touch-icon">
+
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Parisienne&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+  <button class="btn-whatsapp" onclick="window.open('https://wa.me/5581981766775?text=Ol%C3%A1%2C+venho+atrav%C3%A9s+do+site+da+B4+Contabilidade%2C+poderia+me+ajudar%3F', '_blank')">
+    <i class="fab fa-whatsapp"></i>
+  </button>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+  
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Início</a></li>
+          <li><a href="#about">Nossa Empresa</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#founder">Fundador</a></li>
+          <li><a href="#testimonials">Cases</a></li>
+          <li><a href="#contact">Contato</a></li>
+          <!-- Adicionando a logo e os ícones de redes sociais ao menu mobile -->
+          <li class="mobile-logo d-xl-none"><a href="index.html"><img src="assets/img/logo-mobile.png" width="250px" alt=""></a></li>
+          <li class="mobile-social-links d-xl-none">
+            <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+  
+      <div class="header-social-links">
+        <a href="#" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+  
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <!-- <div id="particles"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="618" height="1372"></canvas></div> -->
+      <canvas id="dollarCanvas"></canvas>
+      <div class="container text-center">
+        <div class="row justify-content-center" data-aos="zoom-out">
+          <div class="col-lg-8">
+            <img src="assets/img/hero-logo.png" alt="" class="img-fluid mb-3">
+            <!-- <p>Onde seu sucesso é garantido</p> -->
+            <a href="#about" class="btn-get-started">Vamos lá</a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nossa Empresa</h2>
+        <p>Conheça um pouco sobre</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+            <div id="aboutCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/img/Variação do logo.png" class="d-block w-100" alt="Foto 1">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 content">
+            <h3>B4 Contabilidade</h3>
+            <p>
+              Empresa de consultoria contábil e financeira com sede em Pernambuco, atuando em todo o Brasil. Com mais de 7 anos de experiência, somos formados por profissionais altamente qualificados nas áreas de Terceirização Contábil, Auditoria, Consultoria Tributária e Consultoria Financeira.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>Expertise em diversos segmentos</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Atendimento personalizado</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Compromisso com a excelência</span></li>
+            </ul>
+            <p>
+              A B4 Contabilidade possui um time com vasta experiência no atendimento de empresas nacionais e multinacionais de diferentes portes nos segmentos de serviços, comércio, indústria, educação, construção civil e serviços médicos. Nosso compromisso é oferecer soluções personalizadas que atendam às necessidades específicas de cada cliente, garantindo sempre a máxima eficiência e resultados.
+            </p>
+            <p>
+              Nosso objetivo é ser mais do que um prestador de serviços – queremos ser parceiros estratégicos no sucesso de sua empresa, contribuindo para o crescimento sustentável e a prosperidade dos nossos clientes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        $('#aboutCarousel').carousel();
+      });
+    </script>
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container">
+        <p style="text-align: center;"><b>Nossos Clientes</b></p>
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/cliente1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cliente2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cliente3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cliente4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cliente5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cliente6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cliente1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cliente2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cliente3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cliente4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cliente5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/cliente6.png" class="img-fluid" alt=""></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Reasons to Choose Us Section -->
+    <section id="reasons-to-choose-us" class="reasons section dark-background">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-title">
+              <h2>Por que nós?</h2>
+              <p>Razões que nos tornam diferentes:</p>
+            </div>
+            <img src="assets/img/porquenos-bg.png" class="reasons-bg" alt="">
+            <div class="reasons-list">
+              <div class="reason-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon flex-shrink-0"><i class="bi bi-currency-exchange"></i></div>
+                <div>
+                  <h4 class="title">Integridade</h4>
+                  <p class="description">A ética e a transparência são inegociáveis. Sempre com
+                    honestidade e responsabilidade, garantindo que nossos clientes possam confiar plenamente em nossos serviços.</p>
+                </div>
+              </div><!-- End Reason Item -->
+
+              <div class="reason-item d-flex" data-aos="fade-up" data-aos-delay="150">
+                <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
+                <div>
+                  <h4 class="title">Excelência Técnica</h4>
+                  <p class="description">Liderada por um profissional altamente qualificado e em constante aprimoramento. 
+                    A B4 oferece um nível de serviço que não apenas atende, mas supera as expectativas.</p>
+                </div>
+              </div><!-- End Reason Item -->
+
+              <div class="reason-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon flex-shrink-0"><i class="bi bi-shield-check"></i></div>
+                <div>
+                  <h4 class="title">Foco no cliente</h4>
+                  <p class="description">Colocamos nossos clientes no centro de tudo o que fazemos. 
+                    Nossa missão é entender profundamente suas necessidades e oferecer soluções personalizadas que impulsionem seus negócios para o sucesso.</p>
+                </div>
+              </div><!-- End Reason Item -->
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up">
+            <img src="assets/img/founder/wb.jpeg" alt="Reasons to Choose Us" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section><!-- /Reasons to Choose Us Section -->
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Ferramentas que Utilizamos</h2>
+        <p>Conheça as principais ferramentas que utilizamos para entregar os melhores resultados.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-2 col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="tool-item">
+              <img src="assets/img/ferramentas/ferramenta1.png" alt="Ferramenta 1" class="img-fluid">
+            </div>
+          </div><!-- End Tool Item -->
+
+          <div class="col-lg-2 col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="tool-item">
+              <img src="assets/img/ferramentas/ferramenta2.png" alt="Ferramenta 2" class="img-fluid">
+            </div>
+          </div><!-- End Tool Item -->
+
+          <div class="col-lg-2 col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="tool-item">
+              <img src="assets/img/ferramentas/ferramenta3.png" alt="Ferramenta 3" class="img-fluid">
+            </div>
+          </div><!-- End Tool Item -->
+
+          <div class="col-lg-2 col-md-3 col-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="tool-item">
+              <img src="assets/img/ferramentas/ferramenta4.png" alt="Ferramenta 4" class="img-fluid">
+            </div>
+          </div><!-- End Tool Item -->
+
+          <div class="col-lg-2 col-md-3 col-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="tool-item">
+              <img src="assets/img/ferramentas/ferramenta5.png" alt="Ferramenta 5" class="img-fluid">
+            </div>
+          </div><!-- End Tool Item -->
+        </div>
+      </div>
+
+    </section><!-- /Tools Section -->
+
+
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-8 text-center text-xl-start">
+            <h3>Olá,</h3>
+            <p>Juntos, levamos sua empresa ao próximo nível, promovendo crescimento e eficiência de maneira inteligente e estratégica. 
+              Na B4 Contabilidade, seu sucesso é o nosso compromisso.</p>
+          </div>
+          <div class="col-xl-4 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Entrar em contato <i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nossos Serviços</h2>
+        <p>Na B4, não nos limitamos à contabilidade para tributação. Somos parceiros estratégicos no sucesso dos negócios dos nossos clientes.</p>
+      </div>
+    
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Service Item -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item">
+              <div class="front">
+                <div class="icon"><i class="fas fa-calculator"></i></div>
+                <h4 class="title">Outsourcing Contábil</h4>
+              </div>
+              <div class="back">
+                <h4>Outsourcing Contábil</h4>
+                <ul>
+                  <li>Contabilidade</li>
+                  <li>Fiscal</li>
+                  <li>Departamento Pessoal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+    
+          <!-- Service Item -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item">
+              <div class="front">
+                <div class="icon"><i class="fas fa-balance-scale"></i></div>
+                <h4 class="title">Consultoria Tributaria</h4>
+              </div>
+              <div class="back">
+                <h4>Consultoria Tributaria</h4>
+                <ul>
+                  <li>Recuperação de créditos tributários pagos indevidamente</li>
+                  <li>Modelagem Tributária</li>
+                  <li>Planejamento Tributário</li>
+                  <li>Compliance Fiscal</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+    
+          <!-- Service Item -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item">
+              <div class="front">
+                <div class="icon"><i class="fas fa-building"></i></div>
+                <h4 class="title">Legalização</h4>
+              </div>
+              <div class="back">
+                <h4>Legalização</h4>
+                <ul>
+                  <li>Abertura, Alteração e baixa de empresas</li>
+                  <li>Alvarás e licenças</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+    
+          <!-- Service Item -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item">
+              <div class="front">
+                <div class="icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                <h4 class="title">BPO Financeiro</h4>
+              </div>
+              <div class="back">
+                <h4>BPO Financeiro</h4>
+                <ul>
+                  <li>Terceirização do setor financeiro:</li>
+                  <ul>
+                    <li>Contas a pagar, a receber</li>
+                  </ul>
+                  <li>Conciliação Bancária</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+    
+          <!-- Service Item -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item">
+              <div class="front">
+                <div class="icon"><i class="fas fa-chart-line"></i></div>
+                <h4 class="title">Gestão Financeira</h4>
+              </div>
+              <div class="back">
+                <h4>Gestão Financeira</h4>
+                <ul>
+                  <li>Relatórios Gerenciais</li>
+                  <li>Análise de indicadores</li>
+                  <li>Plano de ação</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <!-- Service Item -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item">
+              <div class="front">
+                <div class="icon"><i class="fas fa-add"></i></div>
+                <h4 class="title">Mais Serviços</h4>
+              </div>
+              <div class="back">
+                <h4></h4>
+                <ul>
+                  <li>Caixa Postal</li>
+                  <li>Consultoria Empresarial</li>
+                  <li>Captação de recursos ( Linha de crédito junto aos bancos )</li>
+                  <li>Registro de marcas e patentes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+    
+        </div>
+      </div>
+    </section>
+
+    <section id="statistics" class="statistics section">
+    
+      <div class="container">
+        <div class="row gy-4 text-center">
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-item">
+              <h3 class="number">+7</h3>
+              <p>Anos de experiência</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-item">
+              <h3 class="number">+5mi</h3>
+              <p>Em economia de impostos</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="stat-item">
+              <h3 class="number">+2mi</h3>
+              <p>Em processamento mensal</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="stat-item">
+              <h3 class="number">+200</h3>
+              <p>CNPJ atendidos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Founder Section -->
+    <section id="founder" class="founder section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>O Fundador</h2>
+        <p>Conheça o visionário por trás da B4 Contabilidade</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-4 col-md-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="founder-photo">
+              <img src="assets/img/founder/wb1.jpeg" alt="Fundador da B4 Contabilidade" class="img-fluid">
+            </div>
+          </div><!-- End Founder Photo -->
+
+          <div class="col-lg-8 col-md-7" data-aos="fade-up" data-aos-delay="200">
+            <div class="founder-info">
+              <h3>Wagner Barros</h3>
+              <p>
+                Fundador da B4 Contabilidade, com mais de 7 anos de experiência no setor contábil. Apaixonado por ajudar empresas a alcançar seu potencial máximo, oferecendo soluções contábeis inovadoras e personalizadas. Sob sua liderança, a B4 Contabilidade tem se destacado por sua dedicação, profissionalismo e resultados excepcionais.
+              </p>
+              <p>
+                Vasta experiência em contabilidade, fiscal, departamento pessoal e consultoria tributária. Reconhecido por sua capacidade de identificar oportunidades de economia tributária e por sua abordagem prática e eficiente.
+              </p>
+              <p>
+                Através de palestras e workshops, compartilha seus conhecimentos inspirando outros profissionais da área.
+              </p>
+            </div>
+          </div><!-- End Founder Info -->
+        </div>
+      </div>
+
+    </section><!-- /Founder Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Depoimentos</h2>
+        <p>O que os nossos clientes dizem:</p>
+      </div>
+      <img src="assets/img/testimonials-bg.png" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Paulo</h3>
+                <h4>CELLPHONE STORE</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Venho agradecer pelo seu trabalho, todo empenho e suporte que vem trazendo para minha empresa. 
+                    Você é um cara nota 1000, diferenciado…. Sem contar na economia que vem trazendo para a empresa.
+                    Obrigado parabéns pelo profissionalismo.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Taynam</h3>
+                <h4>Financeiro da TUDO PRA IPHONE PE</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Wagner, queria aproveitar a oportunidade pra te agradecer por toda paciência e apoio. Tô aprendendo muito com você, 
+                    esse contato diário com você tá sendo muito importante pra mim! Obrigada mesmo 🤝.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Silas</h3>
+                <h4>IPHONERIA RIO LARGO</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Muito obrigado por tudo🥹!!
+                    Me arrependi de não ter fechado contigo antes.
+                     Obrigado pela atenção e paciência que teve nesse processo todo. Não sei o que seria da empresa se não conseguisse essa redução.
+                     Sei que fez o seu melhor pra da certo, que Deus continue abençoando você e sua família 🙏.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title">
+        <h2>Contate-nos</h2>
+        <p>Entre em contato conosco agora mesmo e tire suas dúvidas</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" ">
+
+        <div class="mb-4">
+          <iframe loading="lazy" style="border:0; width: 100%; height: 150px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.530164781835!2d-34.881243426353606!3d-7.9440361791298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab16167e11d52f%3A0xb36f5d48b044f876!2sAv.%20Mal.%20Floriano%20Peixoto%2C%2073%20-%2009%20-%20Centro%2C%20Paulista%20-%20PE%2C%2053401-460!5e0!3m2!1spt-BR!2sbr!4v1722645584573!5m2!1spt-BR!2sbr" frameborder="0" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Endereço</h3>
+                <p>Av. Marechal Floriano Peixoto, nº 73, sala 09, Centro - Paulista - PE</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Telefone</h3>
+                <p>+55 81 98717-7359</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>E-mail</h3>
+                <p>wagner.barros@b4contabilidade.com.br</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Nome" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="E-mail" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Assunto" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Mensagem" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Enviando...</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Em breve entraremos em contato. Obrigado!</div>
+
+                  <button type="submit">Enviar Mensagem</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section>
+    <!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-8 col-md-12 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <img src="assets/img/logo.png" width="60px" alt="">
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Av. Marechal Floriano Peixoto, nº 73, sala 09, Centro, Paulista - PE</p>
+            <p><strong>Telefone:</strong> <span>+55 81 98717-7359</span></p>
+            <p><strong>E-mail:</strong> <span>wagner.barros@b4contabilidade.com.br</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Siga-nos</h4>
+          <p>Acompanhe nossas rede sociais</p>
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-whatsapp"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <strong class="px-1 sitename">B4 Contabilidade |</strong> <span>Todos os direitos reservados</span></p>
+      <div class="credits">
+        Desenvolvido por <a href="https://robsondesa.github.io/robsonportfolio/" target="_blank">InovCodeR</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- <script src="assets/js/particles.min.js"></script> -->
+  <script src="assets/js/dollarParticles.js"></script>
+  <!-- <script>
+    particlesJS("particles", {"particles":{"number":{"value":40,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+  </script>
+  <style type="text/css">.txt-rotate > .wrap { border-right: 0em solid #666 ; }</style> -->
+
+</body>
+
+</html>
