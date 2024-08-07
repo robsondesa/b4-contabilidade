@@ -197,7 +197,7 @@ h6 {
   }
   .header {
     padding: 15px 0;
-    
+
   }
 
   .header .header-social-links {
@@ -2004,6 +2004,7 @@ canvas {
 }
 
 .reasons .reasons-bg {
+  background-color: #014147;
   position: absolute;
   inset: 0;
   display: block;
