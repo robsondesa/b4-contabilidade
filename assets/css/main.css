@@ -146,11 +146,11 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   --background-color: #cccccc;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --default-color: #163534;
+  --heading-color: #163534;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 15px 0;
+  padding: 5px 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -176,7 +176,7 @@ h6 {
 }
 
 .header .header-social-links a {
-  color: color-mix(in srgb, var(--default-color));
+  color: #163534;
   padding-left: 6px;
   display: inline-block;
   transition: 0.3s;
@@ -184,7 +184,7 @@ h6 {
 }
 
 .header .header-social-links a:hover {
-  color: var(--accent-color);
+  color: #163534;
 }
 
 .header .header-social-links a i {
@@ -194,6 +194,9 @@ h6 {
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
+  }
+  .header{
+    padding: 15px 0;
   }
 
   .header .header-social-links {
