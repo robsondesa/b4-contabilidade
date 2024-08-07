@@ -863,6 +863,14 @@ canvas {
   background-color: color-mix(in srgb, var(--accent-color) 90%, white 15%);
 }
 
+.header .logo {
+  display: none; /* Esconder a logo por padrão */
+}
+
+.header.scrolled .logo {
+  display: flex; /* Mostrar a logo quando a página for rolada */
+}
+
 @media (max-width: 768px) {
   .hero h2 {
     font-size: 32px;
