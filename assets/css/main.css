@@ -886,6 +886,10 @@ canvas {
     font-size: 18px;
     margin-top: 70px;
   }
+
+  .reasons .section-title{
+    padding-bottom: 0;
+  }
 }
 
 /*--------------------------------------------------------------
