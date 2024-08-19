@@ -2002,6 +2002,10 @@ canvas {
   padding: 60px 0;
 }
 
+.section-title .reasons{
+  padding-bottom:0;
+}
+
 .reasons .container {
   position: relative;
   z-index: 3;
