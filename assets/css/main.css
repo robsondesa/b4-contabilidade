@@ -903,6 +903,10 @@ canvas {
   border-radius: 8px;
 }
 
+.img-fluid{
+  width: 500px;
+}
+
 .about .content {
   padding: 20px;
   background: #fff;
