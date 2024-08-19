@@ -1968,7 +1968,6 @@ canvas {
 
 .statistics {
   background-color: #163534;
-  padding: 60px 0;
 }
 
 .statistics .section-title h2 {
@@ -1986,7 +1985,7 @@ canvas {
   background: #163534;
   border: 1px solid #014147;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
