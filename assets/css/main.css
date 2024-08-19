@@ -2047,6 +2047,7 @@ canvas {
 .reasons .reason-item .description {
   font-size: 15px;
   color: #fff;
+  text-align: justify;
 }
 
 .reasons .reason-item:hover {
