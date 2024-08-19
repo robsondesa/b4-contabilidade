@@ -1998,14 +1998,6 @@ canvas {
   margin: 0;
 }
 
-.reasons {
-  padding: 60px 0;
-}
-
-.reasons .section {
-  padding-bottom:0;
-}
-
 .reasons .container {
   position: relative;
   z-index: 3;
