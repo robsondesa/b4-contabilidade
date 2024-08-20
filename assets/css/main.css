@@ -927,6 +927,7 @@ canvas {
 .about .content p {
   font-size: 16px;
   color: #163534;
+  text-align: justify;
 }
 
 
@@ -2112,4 +2113,5 @@ canvas {
 .founder-info p {
   font-size: 16px;
   color: #163534;
+  text-align: justify;
 }
